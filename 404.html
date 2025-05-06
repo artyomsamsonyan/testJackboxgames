@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404</title>
+    <link rel="stylesheet" href="./css/style.css " />
+    <link rel="stylesheet" href="./css/header.css " />
+    <link rel="stylesheet" href="./css/home.css " />
+    <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="headerContainer">
+            <a href="/TestJackboxgames" class="mainLogo">
+                <img src="./img/mainLogo.svg" alt="" />
+            </a>
+            <a class="toggleMenuIcon">
+                <svg class="toggleMenu icon" aria-hidden="true" focusable="false" data-prefix="far" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M0 88C0 74.7 10.7 64 24 64l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 112C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 272c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24L24 432c-13.3 0-24-10.7-24-24s10.7-24 24-24l400 0c13.3 0 24 10.7 24 24z">
+                    </path>
+                </svg>
+            </a>
+            <nav class="navList">
+                <div class="link menu">
+                    <a href="#"> Games </a>
+                    <svg class="caretRight icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512">
+                        <path fill="currentColor"
+                            d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+                        </path>
+                    </svg>
+                    <div class="dropdownGamesMenu">
+                        <a class="item">Packs </a>
+                        <a class="item">Games</a>
+                        <a class="item">On Sale </a>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="#"> How To Play </a>
+                </div>
+                <div class="link menu">
+                    <a href="#"> Company </a>
+                    <svg class="caretRight icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+                        </path>
+                    </svg>
+                    <div class="dropdownGamesMenu">
+                        <a class="item">Blog </a>
+                        <a class="item">Jobs</a>
+                        <a class="item">Press Kit</a>
+                    </div>
+                </div>
+                <div class="link signUp">
+                    <a href="#" id="openModalBtn" onclick="openSignUpModal()">
+                        Sign Up
+                    </a>
+                    <div class="dropdownGamesMenu">
+                        <a class="item">Blog </a>
+                        <a class="item">Jobs</a>
+                        <a class="item">Press Kit</a>
+                    </div>
+                    <div id="signupModal" class="signUpModal">
+                        <div class="content">
+                            <span id="closeModalBtn" class="close">&times;</span>
+                            <h2>Sign Up</h2>
+                            <form>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required />
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required />
+
+                                <label for="password">Password</label>
+                                <input type="password" id="password" required />
+
+                                <button type="submit">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="mobileNavListWrapper">
+                <div class="mobileNavList">
+                    <a id="closeMobileNav" class="closeIcon">
+                        <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512">
+                            <path fill="currentColor"
+                                d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z">
+                            </path>
+                        </svg>
+                    </a>
+                    <nav class="navList">
+                        <div class="link menu">
+                            <a href="#">
+                                Games
+                                <svg class="caretRight icon" focusable="false" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                    <path fill="currentColor"
+                                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <div class="dropdownGamesMenu">
+                                <a class="item">Packs </a>
+                                <a class="item">Games</a>
+                                <a class="item">On Sale </a>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <a href="#"> How To Play </a>
+                        </div>
+                        <div class="link menu">
+                            <a href="#">
+                                Company
+                                <svg class="caretRight icon" focusable="false" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <div class="dropdownGamesMenu">
+                                <a class="item">Blog </a>
+                                <a class="item">Jobs</a>
+                                <a class="item">Press Kit</a>
+                            </div>
+                        </div>
+                        <div class="link signUp">
+                            <a href="#" id="openModalBtn" onclick="openSignUpModal()">
+                                Sign Up
+                            </a>
+                            <div class="dropdownGamesMenu">
+                                <a class="item">Blog </a>
+                                <a class="item">Jobs</a>
+                                <a class="item">Press Kit</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="home-page" style="background-image: url(./img/homeBackground.png)">
+            <div class="error_page">
+                <div class="text">
+                    How unfortunate... <br>
+                    We could not find the page you are looking for.
+                </div>
+                <a href="/TestJackboxgames" class="backtoBtn">Back to homepage</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="mainFooter">
+            <div class="subscribeBox">
+                <div class="logo">
+                    <img src="./img/mainLogo.svg" alt="" />
+                </div>
+                <div class="title">Sign Up for Our Newsletter</div>
+                <div class="description">
+                    Get the latest updates, events, and a dose of laughs from JellyCrate
+                    Games, delivered right to your inbox.
+                </div>
+                <form name="jackboxGamesNewsletter">
+                    <div class="inputBox">
+                        <img src="./img/emailIcon.png" class="inputIcon" alt="" />
+                        <input id="emailInputNewsletter" placeholder="Email address" type="email" />
+                    </div>
+                    <button class="submitBtn">Subscribe</button>
+                </form>
+            </div>
+            <div class="socialsLinks">
+                <a href="#">
+                    <img src="./img/facebookIcon.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="./img/instagramIcon.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="./img/redditIcon.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="./img/tiktokIcon.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="./img/twitterIcon.svg" alt="" />
+                </a>
+                <a href="#">
+                    <img src="./img/youtubeIcon.svg" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <div class="copyright">
+                © Copyright 2025 Jackbox Games. All rights reserved.
+            </div>
+            <div class="links">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

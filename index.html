@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jackboxgames</title>
+  <link rel="stylesheet" href="./css/style.css " />
+  <link rel="stylesheet" href="./css/header.css " />
+  <link rel="stylesheet" href="./css/home.css " />
+  <link rel="stylesheet" href="./css/footer.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerContainer">
+      <a href="/TestJackboxgames" class="mainLogo">
+        <img src="./img/mainLogo.svg" alt="" />
+      </a>
+      <a class="toggleMenuIcon">
+        <svg class="toggleMenu icon" aria-hidden="true" focusable="false" data-prefix="far" role="img"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M0 88C0 74.7 10.7 64 24 64l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 112C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24l400 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L24 272c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24L24 432c-13.3 0-24-10.7-24-24s10.7-24 24-24l400 0c13.3 0 24 10.7 24 24z">
+          </path>
+        </svg>
+      </a>
+      <nav class="navList">
+        <div class="link menu">
+          <a href="#"> Games </a>
+          <svg class="caretRight icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 512">
+            <path fill="currentColor"
+              d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+            </path>
+          </svg>
+          <div class="dropdownGamesMenu">
+            <a class="item">Packs </a>
+            <a class="item">Games</a>
+            <a class="item">On Sale </a>
+          </div>
+        </div>
+        <div class="link">
+          <a href="#"> How To Play </a>
+        </div>
+        <div class="link menu">
+          <a href="#"> Company </a>
+          <svg class="caretRight icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 512" data-fa-i2svg="">
+            <path fill="currentColor"
+              d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+            </path>
+          </svg>
+          <div class="dropdownGamesMenu">
+            <a class="item">Blog </a>
+            <a class="item">Jobs</a>
+            <a class="item">Press Kit</a>
+          </div>
+        </div>
+        <div class="link signUp">
+          <a href="#" id="openModalBtn" onclick="openSignUpModal()">
+            Sign Up
+          </a>
+        </div>
+      </nav>
+
+      <div class="mobileNavListWrapper">
+        <div class="mobileNavList">
+          <a id="closeMobileNav" class="closeIcon">
+            <svg class="icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512">
+              <path fill="currentColor"
+                d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z">
+              </path>
+            </svg>
+          </a>
+          <nav class="navList">
+            <div class="link menu">
+              <a href="#">
+                Games
+                <svg class="caretRight icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512">
+                  <path fill="currentColor"
+                    d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+                  </path>
+                </svg>
+              </a>
+              <div class="dropdownGamesMenu">
+                <a class="item">Packs </a>
+                <a class="item">Games</a>
+                <a class="item">On Sale </a>
+              </div>
+            </div>
+            <div class="link">
+              <a href="#"> How To Play </a>
+            </div>
+            <div class="link menu">
+              <a href="#">
+                Company
+                <svg class="caretRight icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z">
+                  </path>
+                </svg>
+              </a>
+
+              <div class="dropdownGamesMenu">
+                <a class="item">Blog </a>
+                <a class="item">Jobs</a>
+                <a class="item">Press Kit</a>
+              </div>
+            </div>
+            <div class="link signUp">
+              <a href="#" id="openModalBtn" onclick="openSignUpModal()">
+                Sign Up
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="signUpModal" class="signUpModal">
+      <div class="content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="home-page" style="background-image: url(./img/homeBackground.png)">
+      <section class="heroSliderSection">
+        <div class="sliderWrapper">
+          <div class="slider" id="slider">
+            <div class="slide firstType" style="
+                  background: linear-gradient(
+                      90deg,
+                      rgba(0, 0, 0, 0.24) 26.97%,
+                      rgba(0, 0, 0, 0.07) 42.52%,
+                      transparent
+                    ),
+                    image-set(url(./img/slideImg.png));
+                ">
+              <div class="contentBox">
+                <div class="learnMoreBox">
+                  <img src="./img/learnMoreImg1.png" alt="" />
+                  <a class="learnMoreBtn">Learn More</a>
+                </div>
+                <div class="learnMoreBox">
+                  <img src="./img/learnMoreImg2.png" alt="" />
+                  <a class="learnMoreBtn">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide secondType" style="background-image: url('./img/slideimg2.png')">
+              <div class="contentBox">
+                <div class="learnMoreBox">
+                  <a href="#">
+                    <img class="mainImage" src="./img/surveyImage.png" alt="" />
+                  </a>
+                  <div class="steamRow">
+                    <div class="logoTitle">
+                      <img src="./img/steamIcon.svg" alt="" />
+                      <span class="title">For Steam</span>
+                    </div>
+                    <span class="italic">Available now!</span>
+                  </div>
+                  <!-- <a href="#" class="addToCardBtn">
+                                        <span>Add to cart</span>
+                                        <div class="icons">
+                                            <img src="./img/windowsIcon.svg" alt="">
+                                            <img src="./img/appleIcon.svg" alt="">
+                                            <img src="./img/linuxIcon.svg" alt="">
+                                        </div>
+                                    </a> -->
+                  <a href="#" class="singUpArrowBtn" style="background: #0006" onclick="openSignUpModal()">
+                    <span>Sign Up</span>
+                    <img src="./img/arrowRightIcon.svg" alt="" />
+                  </a>
+                  <div class="colleagueRow">
+                    <a href="#">
+                      <img src="./img/colleagueIcon1.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon2.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon3.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon4.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon5.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon6.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon7.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon8.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide secondType" style="background-image: url('./img/slideimg3.png')">
+              <div class="contentBox">
+                <div class="learnMoreBox">
+                  <img class="esrbIcon" src="./img/ESRBIcon.png" alt="" />
+                  <a href="#">
+                    <img class="mainImage" src="./img/wordmarkImage.png" alt="" />
+                  </a>
+                  <div class="steamRow">
+                    <div class="logoTitle">
+                      <img src="./img/steamIcon.svg" alt="" />
+                      <span class="title">For Steam Users</span>
+                    </div>
+                    <span class="italic">100% Free</span>
+                  </div>
+                  <!-- <a href="#" class="addToCardBtn">
+                                        <span>Add to cart</span>
+                                        <div class="icons">
+                                            <img src="./img/windowsIcon.svg" alt="">
+                                            <img src="./img/appleIcon.svg" alt="">
+                                            <img src="./img/linuxIcon.svg" alt="">
+                                        </div>
+                                    </a> -->
+                  <a href="#" class="singUpArrowBtn" style="background: #0006" onclick="openSignUpModal()">
+                    <span>Sing Up</span>
+                    <img src="./img/arrowRightIcon.svg" alt="" />
+                  </a>
+                  <div class="colleagueRow">
+                    <a href="#">
+                      <img src="./img/colleagueIcon1.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon2.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon3.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon4.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon5.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon6.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon7.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon8.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide secondType" style="background-image: url('./img/slideImg4.png')">
+              <div class="contentBox">
+                <div class="learnMoreBox">
+                  <a href="#">
+                    <img class="mainImage" src="./img/megapickerImage.svg" alt="" />
+                  </a>
+                  <div class="steamRow">
+                    <div class="logoTitle">
+                      <img src="./img/steamIcon.svg" alt="" />
+                      <span style="text-transform: uppercase" class="title">For <b> Steam </b> Users</span>
+                    </div>
+                    <span class="italic">100% Free</span>
+                  </div>
+                  <!-- <a href="#" class="addToCardBtn"
+                                      style="background: linear-gradient(90deg,#fad000,#fff478);">
+                                      <span>View on Steam</span>
+                                      <div class="icons">
+                                          <img src="./img/windowsIcon.svg" alt="">
+                                          <img src="./img/appleIcon.svg" alt="">
+                                          <img src="./img/linuxIcon.svg" alt="">
+                                      </div>
+                                  </a> -->
+                  <a href="#" class="singUpArrowBtn" onclick="openSignUpModal()" style="background: #0006">
+                    <span>Sign Up</span>
+                    <img src="./img/arrowRightIcon.svg" alt="" />
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <div class="slide secondType" style="background-image: url('./img/slideImg5.png')">
+              <div class="contentBox">
+                <div class="learnMoreBox">
+                  <a href="#">
+                    <img class="mainImage" src="./img/megapickerImage2.png" alt="" />
+                  </a>
+                  <!-- <a href="#" class="addToCardBtn"
+                                        style="background: linear-gradient(90deg,#fad000,#fff478);">
+                                        <span>View on Steam</span>
+                                        <div class="icons">
+                                            <img src="./img/windowsIcon.svg" alt="">
+                                            <img src="./img/appleIcon.svg" alt="">
+                                            <img src="./img/linuxIcon.svg" alt="">
+                                        </div>
+                                    </a> -->
+                  <a href="#" class="singUpArrowBtn" onclick="openSignUpModal()" style="background: #0006">
+                    <span>Sign Up</span>
+                    <img src="./img/arrowRightIcon.svg" alt="" />
+                  </a>
+                  <div class="colleagueRow">
+                    <a href="#">
+                      <img src="./img/colleagueIcon1.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon2.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon3.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon4.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon5.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon6.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon7.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/colleagueIcon8.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paginationRow">
+          <div class="pagination" id="pagination">
+            <button class="navBtn prev-btn">
+              <img src="./img/carouselarrow.svg" alt="" />
+            </button>
+            <button class="navBtn next-btn">
+              <img src="./img/carouselarrow.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="whatsJackboxSection" >
+        <div class="mayoWrapper">
+          <div class="mayoLogo" style="background-image: url(./img/mayoImage2.png)"></div>
+        </div>
+        <div class="content">
+          <div class="text">
+            <div class="uptitle">Jackbox Games Official Website</div>
+            <h3 class="title">What's Jackbox Games?</h3>
+            <p class="description">
+              Jackbox Games is a Chicago-born game studio widely recognized
+              for creating hit party games such as
+              <em>Quiplash, Fibbage, Drawful, Trivia Murder Party,</em>, and
+              others.
+            </p>
+            <p class="description">
+              Imagine us as the eccentric offspring of traditional social
+              games like charades — the kind that left college early but
+              somehow won over everyone by turning into a globally adored
+              entertainer.
+            </p>
+          </div>
+          <div class="gamesGallery">
+            <a href="" class="link">
+              <img src="./img/gamesImage1.avif" alt="Quiplash 3" />
+            </a>
+            <a href="" class="link">
+              <img src="./img/gamesImage2.avif" alt="Trivia Murder Party 2" />
+            </a>
+            <a href="" class="link">
+              <img src="./img/gamesImage3.avif" alt="Drawful 2" />
+            </a>
+            <a href="" class="link">
+              <img src="./img/gamesImage4.avif" alt="Fibbage 4" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="blogSection" style="background-image: url(./img/blogSectionImg.jpg)">
+        <div class="blogSectionWrapper">
+          <div class="uptitle">Jackbox Games Blog</div>
+          <h4 class="title">
+            There's always something cooking behind the scenes
+          </h4>
+          <div class="blogList">
+            <div class="blogCard">
+              <div class="blogImg" style="background-image: url(./img/blogCard1.png)"></div>
+              <h5 class="title">Hunting for Trivia Murder Party?</h5>
+              <span class="date">April 12, 2025</span>
+            </div>
+            <div class="blogCard">
+              <div class="blogImg" style="background-image: url(./img/blogCard2.png)"></div>
+              <h5 class="title">
+                Searching for the Next Murder Mystery Game?
+              </h5>
+              <span class="date">May 30, 2025</span>
+            </div>
+            <div class="blogCard">
+              <div class="blogImg" style="background-image: url(./img/blogCard3.png)"></div>
+              <h5 class="title">Looking for the Ultimate Party Game?</h5>
+              <span class="date">Oktober 24, 2025</span>
+            </div>
+            <div class="blogCard">
+              <div class="blogImg" style="background-image: url(./img/blogCard4.png)"></div>
+              <h5 class="title">Did You Stumble Upon Trivia Murder Party?</h5>
+              <span class="date">November 05, 2025</span>
+            </div>
+          </div>
+          <a href="#" class="visitBlogBtn">Visit the Jackbox Games Blog</a>
+        </div>
+      </section>
+      <section class="jackboxPartySection" style="background-image: url(./img/jackboxPartyBck.webp)">
+        <div class="jackboxPartySectionWrapper">
+          <div class="uptitle">Jackbox Party Packs</div>
+          <h4 class="title">Pick Your Party Pack</h4>
+          <p class="description">
+            Every party pack includes five exciting and original games. We've
+            crafted 10 unique packs so far, each offering a blend of games
+            that cater to all kinds of players—whether you're together in
+            person, connecting over Zoom, or streaming live on Twitch. From
+            trivia and drawing games to hidden identity challenges and
+            creative writing games, there's something for everyone at the
+            party.
+          </p>
+          <div class="packsList">
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg2.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg3.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg4.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg5.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg6.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg7.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg8.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg9.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg10.png" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg11.avif" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/jackboxPartyImg12.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="socialSection">
+        <div class="content">
+          <h4 class="title">
+            Bring Friends Together, No Matter the Distance
+          </h4>
+          <span class="subtitle">Jackbox Games: Made for Friends </span>
+          <p class="description">
+            No need for your friends to purchase anything—just ensure everyone
+            can view the host’s screen, and you’re all set for a great time.
+          </p>
+          <span class="subtitle">Stay in the loop with everything Jackbox Games
+          </span>
+          <div class="socialLinks">
+            <a href="#" class="link">
+              <img src="./img/facebookIcon.svg" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/instagramIcon.svg" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/redditIcon.svg" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/tiktokIcon.svg" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/twitterIcon.svg" alt="" />
+            </a>
+            <a href="#" class="link">
+              <img src="./img/youtubeIcon.svg" alt="" />
+            </a>
+          </div>
+          <span class="subtitle">Join our Newsletter</span>
+          <p class="description">
+            Stay up to date on all things Jackbox Games, including news,
+            updates, teasers, and exclusives.
+          </p>
+          <label class="inputBox">
+            <img src="./img/emailIcon.png" class="iputIcon" alt="" />
+            <input type="email" placeholder="Email address" />
+          </label>
+          <button class="submitFormBtn" type="submit">Submit</button>
+        </div>
+        <div class="imagesWrapper">
+          <div class="imageBox first">
+            <img src="./img/socialImg1.png" alt="" />
+          </div>
+          <div class="imageBox second">
+            <img src="./img/socialImg2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="faqSection">
+        <div class="imageBox">
+          <img src="./img/chimpImg.png" alt="" />
+        </div>
+        <div class="content">
+          <div class="uptitle">Frequently Asked Questionsս</div>
+          <h4 class="title">Still Have Questions?</h4>
+          <p class="description">
+            We'll try our best to help you below! If you don't find what
+            you're looking for, be sure to visit our How to Play section for
+            more guidance.
+          </p>
+          <div class="faqsList">
+            <div class="faqBox">
+              <div class="question">
+                <div class="text">What is Jackbox Games?</div>
+                <button class="openCloseBtn">
+                  <svg alt="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer">
+                <p>
+                  Jackbox Games is a studio that creates exciting party games,
+                  known for hits like
+                  <em>Quiplash, Fibbage, Drawful, Trivia Murder Party</em>
+                  and many more.
+                </p>
+                <p>
+                  Our goal is to bring people together for fun, quirky, and
+                  unforgettable experiences.
+                </p>
+              </div>
+            </div>
+            <div class="faqBox">
+              <div class="question">
+                <div class="text">What is a Party Pack?</div>
+                <button class="openCloseBtn">
+                  <svg alt="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer">
+                <p>
+                  Each Party Pack includes five fun-filled games that can be
+                  played by groups of any size.
+                </p>
+                <p>
+                  We’ve created several packs over the years, each offering a
+                  unique mix of drawing, trivia, writing, and identity games
+                  that guarantee fun for all <a href="">players—whether </a>.
+                  in person or online.
+                </p>
+              </div>
+            </div>
+            <div class="faqBox">
+              <div class="question">
+                <div class="text">
+                  I’ve Bought a Party Pack! What Should My Friends or Family
+                  Do to Join?
+                </div>
+                <button class="openCloseBtn">
+                  <svg alt="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer">
+                <p>
+                  Once you’ve purchased a Party Pack, your friends and family
+                  don’t need to buy anything! Simply share the host screen
+                  with them, and they can join in on their phones, tablets, or
+                  computers. It’s that easy to get the party started!
+                </p>
+              </div>
+            </div>
+            <div class="faqBox">
+              <div class="question">
+                <div class="text">How Do I Start a Jackbox Game?</div>
+                <button class="openCloseBtn">
+                  <svg alt="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer">
+                <p>
+                  To start your game, simply open the Party Pack you
+                  purchased, select a game from the list, and follow the
+                  prompts. Once the game is live, share the unique game code
+                  with your friends so they can join in and play from their
+                  devices.
+                </p>
+                <p>
+                  The key is making sure everyone in your group (either in
+                  person or remotely) can see and hear the screen running the
+                  game. This will allow them to see the room code and join,
+                  and to see what’s happening in the game and play along.
+                </p>
+              </div>
+            </div>
+            <div class="faqBox">
+              <div class="question">
+                <div class="text">
+                  What Should I Do if I Encounter Problems While Playing?
+                </div>
+                <button class="openCloseBtn">
+                  <svg alt="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="answer">
+                <p>
+                  If you run into any issues while playing, try refreshing the
+                  page, checking your internet connection, or restarting the
+                  game.
+                </p>
+                <p>
+                  If the issue persists, visit our support page or contact our
+                  team for further assistance. We’re here to help you keep the
+                  fun going!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="mainFooter">
+      <div class="subscribeBox">
+        <div class="logo">
+          <img src="./img/mainLogo.svg" alt="" />
+        </div>
+        <div class="title">Sign Up for Our Newsletter</div>
+        <div class="description">
+          Get the latest updates, events, and a dose of laughs from JellyCrate
+          Games, delivered right to your inbox.
+        </div>
+        <form name="jackboxGamesNewsletter">
+          <div class="inputBox">
+            <img src="./img/emailIcon.png" class="inputIcon" alt="" />
+            <input id="emailInputNewsletter" placeholder="Email address" type="email" />
+          </div>
+          <button class="submitBtn">Subscribe</button>
+        </form>
+      </div>
+      <div class="socialsLinks">
+        <a href="#">
+          <img src="./img/facebookIcon.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/instagramIcon.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/redditIcon.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/tiktokIcon.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/twitterIcon.svg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/youtubeIcon.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <div class="bottomFooter">
+      <div class="copyright">
+        © Copyright 2025 Jackbox Games. All rights reserved.
+      </div>
+      <div class="links">
+        <a href="">Terms of Service</a>
+        <a href="">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
